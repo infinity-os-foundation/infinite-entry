@@ -755,26 +755,26 @@ when it is made by the Foundation or its sponsor.
 
 ## Appendix A: Glossary
 
-**Conservation Law.** The mathematical property of Infinite Entry that driver contributions must sum exactly to total outcome change. Analogous to the accounting trial balance (debits = credits). Provides self-checking and auditability for driver tree decompositions.
-
-**Dimension Registry.** A shared definition store for the dimensions (axes of analysis) used across all consumption modes. Contains hierarchy chains enabling consistent drill-down paths from summary to detail.
-
-**Driver Tree.** A hierarchical decomposition of a business outcome metric into its constituent drivers, expressed through mathematical relationships (multiplicative, additive, or mixed). Not stored data; computed on demand from ledger values.
-
-**Governance Tier.** A classification of a business decision by impact and reversibility that determines the required approval path: auto-approve (Tier 1), AI review (Tier 2), human approval (Tier 3), or committee review (Tier 4).
-
-**Infinite Entry.** The record system described in this document. It specifies the primitives a business keeps records in, the relationships between them, and the invariants those records must satisfy, covering observation, meaning, intent, authority and effect. Its metric layer carries a conservation law (invariant I1): every business outcome decomposes into constituent drivers, and driver contributions sum to total change. That law is one of seven invariants, not the whole system.
-
-**Infinite Ledger.** The storage primitive of Infinite Entry. A tall-narrow table with one row per metric per date per dimension combination. The single source of truth from which all pivot views and driver tree computations are derived.
-
 **Approval.** A decision made by somebody other than the actor, spent once, and decided by a named
 login. Invariants I5 and I3.
 
 **Authority.** A grant and a corresponding revocation, scoped to a workspace. The record of what an
 actor is permitted to do.
 
+**Conservation Law.** The mathematical property of Infinite Entry that driver contributions must sum exactly to total outcome change. Analogous to the accounting trial balance (debits = credits). Provides self-checking and auditability for driver tree decompositions.
+
+**Dimension Registry.** A shared definition store for the dimensions (axes of analysis) used across all consumption modes. Contains hierarchy chains enabling consistent drill-down paths from summary to detail.
+
+**Driver Tree.** A hierarchical decomposition of a business outcome metric into its constituent drivers, expressed through mathematical relationships (multiplicative, additive, or mixed). Not stored data; computed on demand from ledger values.
+
 **Effect.** A change in the world, reserved before it happens and naming the authority that
 licensed it. Invariants I2 and I3.
+
+**Governance Tier.** A classification of a business decision by impact and reversibility that determines the required approval path: auto-approve (Tier 1), AI review (Tier 2), human approval (Tier 3), or committee review (Tier 4).
+
+**Infinite Entry.** The record system described in this document. It specifies the primitives a business keeps records in, the relationships between them, and the invariants those records must satisfy, covering observation, meaning, intent, authority and effect. Its metric layer carries a conservation law (invariant I1): every business outcome decomposes into constituent drivers, and driver contributions sum to total change. That law is one of seven invariants, not the whole system.
+
+**Infinite Ledger.** The storage primitive of Infinite Entry. A tall-narrow table with one row per metric per date per dimension combination. The single source of truth from which all pivot views and driver tree computations are derived.
 
 **Intake.** The record of what was observed, carrying its origin, its author and its time. The
 journal of Infinite Entry.
@@ -785,16 +785,6 @@ is detectable from the records alone. Section 4.8 states seven.
 **Lease.** The right to act now, held by exactly one actor, proven by the settler that acts.
 Invariant I4.
 
-**Primitive.** A thing a business keeps records in. Section 4.3 names them, grouped into
-observation, meaning, intent, authority, identity and attention, all measured from a working
-implementation. That table is the authoritative list; this entry does not restate its size, so the
-two cannot drift apart.
-
-**Work item.** A unit of intended work carrying a brief, whose acceptance is a login rather than a
-flag, and whose completion and acceptance are separate questions. Invariant I7.
-
-**KYN (Know Your Numbers).** The interactive analytics layer built on the Infinite Ledger. Provides human-accessible pivot tables and driver tree visualizations derived from the same structured context that AI agents consume.
-
 **Metric Registry.** A shared definition store for all business metrics. Contains metric identifiers, names, formats, polarities, aggregation methods, computation expressions, and dependency relationships. The "chart of accounts" for business metrics.
 
 **OODA Loop.** Observe, Orient, Decide, Act. A decision cycle framework developed by Colonel John Boyd. Orient is the dominant element ("the schwerpunkt"), determining what is observed, how decisions are formed, and what actions are considered possible.
@@ -803,9 +793,17 @@ flag, and whose completion and acceptance are separate questions. Invariant I7.
 
 **Pivot Mode.** The interactive exploration consumption mode of the Infinite Ledger. Users select metrics and dimensions; the system materializes wide-format views supporting cross-filtering and drill-down navigation.
 
+**Primitive.** A thing a business keeps records in. Section 4.3 names them, grouped into
+observation, meaning, intent, authority, identity and attention, all measured from a working
+implementation. That table is the authoritative list; this entry does not restate its size, so the
+two cannot drift apart.
+
 **Sign Convention.** The rule in the Infinite Ledger that revenue-side metrics carry a positive sign and cost-side metrics carry a negative sign. The sum of all signed metric values in a period and dimension slice equals the net contribution to business outcome, providing the ledger's self-checking property.
 
 ---
+
+**Work item.** A unit of intended work carrying a brief, whose acceptance is a login rather than a
+flag, and whose completion and acceptance are separate questions. Invariant I7.
 
 ## Appendix B: Decomposition Method Reference
 
